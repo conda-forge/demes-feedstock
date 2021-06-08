@@ -1,6 +1,6 @@
 {% set name = "demes" %}
-{% set version = "0.1.1" %}
-{% set sha256 = "3001a54fd331c444c1e32395f0afdb7f2a23538f2e6502d8c9754c9fad98cc1d" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "59eff5dbe8b7043bd4ee3fb7027056bb3a32d943d786220772b0b68fabc9cac4" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -37,7 +37,7 @@ about:
   license: ISC
   license_family: BSD
   license_file: LICENSE
-  summary: "Tools for describing and manipulating demographic models in population genetics."
+  summary: Tools for describing and manipulating demographic models in population genetics.
   doc_url: https://popsim-consortium.github.io/demes-docs/
   dev_url: https://github.com/popsim-consortium/demes-python
 

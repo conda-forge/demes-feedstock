@@ -31,6 +31,11 @@ requirements:
 test:
   imports:
     - demes
+  commands:
+    - pip check
+    - demes --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/popsim-consortium/demes-python

@@ -1,6 +1,6 @@
 {% set name = "demes" %}
-{% set version = "0.2.1" %}
-{% set sha256 = "cc6004768971df5920e7918c8f9350c0c087d9b9921f0c957603c6e25f4aa80b" %}
+{% set version = "0.2.2" %}
+{% set sha256 = "8eebe4b236b2d19e057228892f5b5f53f3e0d127ca9128efead1728a65115dac" %}
 
 package:
   name: {{ name|lower }}
@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - setuptools_scm
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.7
     # pins taken from setup.cfg
     - attrs  >=20.3
     - ruamel.yaml >=0.15.78

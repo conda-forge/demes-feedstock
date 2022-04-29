@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - setuptools
     - setuptools_scm
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.7
     # pins taken from setup.cfg
     - attrs  >=20.3
     - ruamel.yaml >=0.15.78

@@ -1,6 +1,6 @@
 {% set name = "demes" %}
-{% set version = "0.2.2" %}
-{% set sha256 = "8eebe4b236b2d19e057228892f5b5f53f3e0d127ca9128efead1728a65115dac" %}
+{% set version = "0.2.3" %}
+{% set sha256 = "9e613b65b475dba277bca751de1f37a89fd5eb4d856ba27733a2099c8a823617" %}
 
 package:
   name: {{ name|lower }}

@@ -1,11 +1,11 @@
-About demes
-===========
+About demes-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/demes-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/popsim-consortium/demes-python
 
 Package license: ISC
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/demes-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for describing and manipulating demographic models in population genetics.
 

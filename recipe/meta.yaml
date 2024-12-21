@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   entry_points:
     - demes = demes.__main__:cli
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,13 +19,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - setuptools
     - setuptools_scm
     - pip
 
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     # pins taken from setup.cfg
     - attrs  >=20.3
     - ruamel.yaml >=0.15.78
@@ -38,6 +38,7 @@ test:
     - demes --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/popsim-consortium/demes-python
